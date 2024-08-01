@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f0f2f5 ;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: crimson;  */
+    height: 600px;
+    padding: 100px 0;
+}
+
+.mensagem{
+     width: 40%; 
+}
+
+.mensagem img{
+    padding-top: 60px;
+    width: 300px;
+}
+
+.mensagem p{
+    /* background-color: chocolate; */
+    padding: 0 30px;
+    font-size: 26px;  
+}
+
+.login{
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    height: 365px;
+    width: 400px;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    margin-top: 10px;
+    padding-left: 15px;
+
+    height: 45px;
+    width: 100%;
+    
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.btn-entrar{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    background-color: #1877f2;
+    margin: 35px 0 20px 0 ;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.btn-entrar:hover{
+    cursor: pointer;
+}
+
+form p{
+    font-size: 14px;
+    text-align: center;
+    color: #1877f2;
+}
+
+form p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+hr{
+    margin: 20px 0;
+}
+
+.btn-conta{
+    font-size: 15px;
+    font-weight: 800;
+    background-color: #42b742;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px auto;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-conta:hover{
+    cursor: pointer;
+}
+
+.mensagem-2{
+    margin-top: 25px;
+    text-align: center;
+}

@@ -1,0 +1,37 @@
+/* Block x Inline */
+/* content box - onde conteúdo sera exibido
+    - height e width */
+/* padding box - Area ao redor do conteudo
+    - padding */
+/*border box - Conteudo e o preenchimento  
+    - border */
+
+
+/* reset CSS - Remover margins e o padding */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Aplicar box-sizing para todos os elementos */
+
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    width: 300px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #333;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+}

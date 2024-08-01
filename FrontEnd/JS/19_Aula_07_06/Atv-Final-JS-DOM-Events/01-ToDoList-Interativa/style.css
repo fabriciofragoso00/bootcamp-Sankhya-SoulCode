@@ -1,0 +1,55 @@
+body{
+    background: #0b0b0b ;
+}
+.container-content{
+    width: 100%;
+    max-width: 540px;
+    background: #0b0b0b;
+    color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    
+}
+
+input{
+    width: 75%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 6px;
+    font-weight: 14px;
+}
+
+ul li{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 23px;
+    padding: 10px 8px 10px 2px;
+    user-select: none;
+    cursor: pointer;
+    
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+.buttons{
+    display: flex;
+    gap: 15px;
+}

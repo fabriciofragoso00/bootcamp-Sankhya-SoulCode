@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    background: #0b0b0b;
+    padding: 20px;
+}
+
+.container{
+    max-width: 800px;
+    margin: 80px auto;
+    background: #0b0b0b;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.808);
+}
+
+.container h1{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.product-list, .cart{
+    margin-bottom: 20px;
+}
+
+input{
+    width: 40px;
+}
+
+.total{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: right;
+}

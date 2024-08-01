@@ -1,0 +1,26 @@
+body{
+    background: #0b0b0b ;
+}
+
+.container-content{
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    background: #0b0b0b;
+    color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.thumbnail{
+    cursor: pointer;
+    width: 190px;
+    height: 130px;
+    
+}

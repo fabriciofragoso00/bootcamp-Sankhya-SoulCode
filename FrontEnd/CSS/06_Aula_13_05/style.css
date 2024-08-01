@@ -1,0 +1,65 @@
+/*
+<regra ou seletor>{
+    propriedade: valor;
+    propriedade2: valor;
+
+1. Seletor universal (*) e pseudo-elementos (::before, ::after): Especificidade
+mais baixa;
+2- Seletor de tipo (por exemplo, p, div): Especificidade moderada;
+3. Seletor de classe, seletor de atributo e pseudo-classes (por exemplo, .classe, [atributo], :hover): Especificidade média;
+4. Seletor de ID (#id): Especificidade alta;
+5. Seletor inline (atributo style): Especificidade máxima.
+}
+
+<seletores de tipo>*/
+h1{
+    font-size: 32px;
+}
+p{
+    color: blue;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* <seletores de ID> */
+#h1-header{
+    color: red;
+}
+
+/* <seletores de classe> */
+.conteudo{
+    text-align: justify;
+}
+/* <seletores descendentes> */
+.container{
+    background-color: red;
+    color: yellow;
+}
+
+.container p{
+    background-color: green;
+    text-align: center;
+    color: white;
+    font-style: normal;
+}
+
+.container div{
+    background-color: aqua;
+}
+
+.container div p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: right;
+    color: orangered;
+}
+
+/* <seletores descendentes diretos> */
+.container > p{
+    color: blueviolet;
+}
+
+/* <seletores pseudo-classes> */
+h1:hover{
+    color: chartreuse;
+}

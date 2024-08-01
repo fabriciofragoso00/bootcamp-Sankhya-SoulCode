@@ -1,0 +1,38 @@
+
+.container-sport{
+    width: 100%;
+    background-color: chocolate;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    justify-content: space-between;
+}
+
+table{
+    margin: 0 20px;
+    background-color: chartreuse;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #000;
+    color: green;
+}
+.card-sport{
+    width: 689px;
+    margin-left: 50px;
+    background-color: blue;
+    display: flex;
+}
+.card-sport img{
+    width: 250px;
+    height:160px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-content">
+        <h1>Galeria de Fotos</h1>
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+            <img src="https://i.redd.it/quwhmc8oyxu61.jpg" alt="Image 1" class="img-thumbnail thumbnail" >
+
+            <img src="https://wallpapers.com/images/high/dark-souls-knight-artorias-cover-o1pgbnpsmlgnpuq5.webp" alt="Image 2" class="img-thumbnail thumbnail" width="300">
+
+            <img src="https://images7.alphacoders.com/397/thumb-1920-397325.jpg" alt="Image 3" class="img-thumbnail thumbnail" width="300">
+
+            <img src="https://wallpapers.com/images/hd/dark-souls-iii-flaming-knight-cover-rxaihn0iofpsy6gz.webp" alt="Image 3" class="img-thumbnail thumbnail" width="300">
+
+            <img src="https://i.pinimg.com/originals/43/a4/56/43a4568215faed2c795671d064574544.jpg" alt="Image 4" class="img-thumbnail thumbnail" width="300">
+
+            <img src="https://tm.ibxk.com.br/2021/11/08/08112452276120.jpg?ims=1200x675" alt="Image 5" class="img-thumbnail thumbnail" width="300">
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Visualização da Imagem</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="prevBtn">Anterior</button>
+                    <button type="button" class="btn btn-secondary" id="nextBtn">Próxima</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer, aside, main, header{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+aside{
+    width: 25%;
+    background-color: blue;
+    color: #fff;
+    padding: 60px;
+}
+
+main{
+    flex: 75%;
+    padding: 20px;
+}

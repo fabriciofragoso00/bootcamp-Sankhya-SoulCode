@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --primary-color:#3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #374c3c;
+    --background-color: #ecf0f1;
+    --text-color:#2c3e50;
+}
+
+p{
+    /* Fontes */
+
+    color: var(--secondary-color);
+    font-family: 'Roboto', Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+    /*
+
+    px(pixel) - unidade absoluta
+    em - Unidade relativa np elemento pai do elemento atual
+    rem - relativa ao tamanho da fonte raiz (html)
+    
+   */
+    
+    font-size: 18px;
+    font-style: italic;
+    font-weight: lighter;
+    text-transform: capitalize;
+    text-decoration: overline;
+
+    /* Layout de Texto */
+
+    text-align: left;
+    line-height: 2;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    word-wrap: break-word;
+
+    /* 
+    
+    Representação de Cores
+    
+    RGB -> rgb(192 226 90)
+    HEX -> #c0e25a
+    HSL -> hsl(75 70.1% 62%)
+    HWB -> hwb(75 35.4% 11.4%)
+    
+    */
+
+    /* 
+
+    Unidades de Comprimento 
+    
+    cm - Centrimetros = 1cm = 37.8px = 25.2/64pol
+    mm - Milimetros = 1mm = 1/10 de 1cm
+    Q - Quater-millimeters 1Q = 1/40 de 1cm
+    in - Inches 1pol = 2.54 = 96px
+    pt - Points 1pt = 1/72 de 1pol
+    px - Pixel 1px = 1/96 de 1pol
+    
+    */
+
+    /* 
+    
+    Unidades Relativas 
+    
+    em - Tamanho da Fonte no Elemento Pai
+    rem - Tamanho da Fonte do Elemento Raiz (html)
+    vw - 1% da Largura da Tela
+    vh - 1% da Altura da Tela
+    
+    */
+}
+
+html{
+    font-size: 18px;
+}
+
+div{
+    font-size: 24px;
+}
+
+img{
+    width: 10em;
+    height: 10rem;
+}

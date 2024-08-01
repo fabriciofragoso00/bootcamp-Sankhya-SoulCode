@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+li, a{
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #1b506d;
+}
+
+header{
+    height: 80px;
+    padding: 0 80px;
+
+    color: #fff;
+    background-color:#0b1419;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-bottom: 2px solid #000;
+    
+}
+
+.navbar{
+    display: flex;
+    gap: 10px;
+}
+
+.navbar li a{
+    color: #fff;
+    padding: 30px;
+    
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.navbar li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.home{
+    background-image: url(./conceito-de-colagem-de-html-e-css.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: calc(115vh - 80px);
+    
+    position: relative; 
+
+    box-shadow: 2px 2px 10px 2px #0b1419;
+}
+
+.home::after{
+    content: '';
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    background: linear-gradient(90deg, rgba(0,0,0,.85),rgba(0,0,0,.7) 35%, transparent 65%);
+}
+
+.home .info{
+    position: absolute;
+    z-index: 1;
+
+    min-height: calc(115vh - 80px);
+    padding: 80px 80px 80px 170px;
+    max-width: 780px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    
+}
+
+.home .info .title{
+    font-size: 55px;
+    color: #fff;
+}
+
+.home .info .text{
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.btn-talk{
+    width: 70%;
+    padding: 20px 40px;
+    
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    
+    transition: all .3s;
+}
+
+.btn-talk:hover{
+    background-color:#eae2b7 ;
+    color: #50534d;
+}
+
+.btn-talk:active{
+    color:#0b1419;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+   
+    /* background-color: blue; */
+}
+
+.card{
+    width: 280px;
+    height: 280px;
+     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px #0b1419;
+    
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-1{  
+    background-image: url(https://img.freepik.com/fotos-gratis/conceito-de-colagem-de-html-e-css-com-pessoa_23-2150061986.jpg?t=st=1716000762~exp=1716004362~hmac=a3e235e3ae0af4857b05ebd5adf07998066d4474a10ba047e69ba1ac1b0452bb&w=740);
+}
+
+.card-2{
+    background-image: url(https://img.freepik.com/fotos-gratis/web-designer-feminina-no-escritorio-com-notebook_23-2149749858.jpg?t=st=1716069235~exp=1716072835~hmac=0870a026e0d604188f2b2c963354263bcbf480c33d97652799d95c64ab30260c&w=740);
+}
+
+.card-3{
+    background-image: url(https://img.freepik.com/fotos-gratis/pessoas-negocio-discutir-a-quadros-e-graficos-tabela-em-a-reuniao_23-2147923334.jpg?t=st=1716069587~exp=1716073187~hmac=30166a337585662d999ecae6d785523bada07a72453129cc3891bc1d01010440&w=740);
+}
+
+.card-4{
+    background-image: url(https://img.freepik.com/fotos-gratis/feche-o-laptop-com-cadeado-e-corrente_23-2149101218.jpg?t=st=1716069854~exp=1716073454~hmac=b770d98617de6018407cbe784bc25c0051aa59ca1f6665e5f3f67e0f22603b19&w=740);
+}
+
+.card-5{
+    background-image: url(https://img.freepik.com/fotos-gratis/homem-usando-um-tablet-para-trabalhar-e-se-conectar-com-outras-pessoas_23-2149369110.jpg?t=st=1716069927~exp=1716073527~hmac=f3ee6d773769a28c66e429655c335d082ca3bc12e778f697984869d186bf3c1b&w=740);
+}
+
+.card-6{
+    background-image: url(https://img.freepik.com/vetores-gratis/ilustracao-de-social-midia-conceito_53876-37691.jpg?t=st=1716070041~exp=1716073641~hmac=0bc9ea2c1c51033a95903e6c413892baa97e858eea51c27709a2249a2df22d34&w=740);
+}
+
+.card:hover{
+    box-shadow: 2px 2px 10px 2px rgb(246, 247, 246);
+    opacity: 1;
+}
+
+.card h3{
+    text-align: center;
+    font-weight: 900;
+
+    color: #d9e4eb;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    width: 80%;
+    margin-top: 25px;
+    
+    border-radius: 10px;
+}
+
+.card a{
+    text-align: center;
+    background-color: #eae2b7;
+    color:#50534d;
+
+    padding: 10px 20px;
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+}
+
+.card a:hover{
+    scale: 1.1;
+    
+}
+
+.big-cards{
+    color: #fff;
+    
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.big-card{
+    width: 50%;
+    
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px #0b1419;
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.content-big-card{
+    width: 50%;
+}
+
+.content-big-card h2{
+    padding: 0 40px;
+    font-size: 25px;
+    line-height: 1.4;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.content-big-card p{
+    padding: 20px 40px;
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.btn-test{
+    width: 50%;
+    padding: 30px 0;
+
+    display: flex;
+    justify-content: center;  
+}
+
+.btn-test button{
+    padding: 20px 30px;
+    margin-right: 40px;
+    
+    font-size: 20px;
+    font-weight: bold;
+
+    background-color:#eae2b7 ;
+    color: #50534d;
+
+    border-radius: 20px;
+    border: none;
+}
+
+.btn-test button:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.contact-card{
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: 2px 2px 10px 2px #0b1419;
+    border-radius: 20px;
+}
+
+.contact-card h2{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form input, form textarea{
+    margin-bottom: 10px;
+    padding: 10px;
+
+    box-shadow: 2px 2px 10px 2px #0b1419;
+    border: none;
+    border-radius: 8px;
+}
+
+form button{
+    margin: 10px 0 20px 0;
+    padding: 10px 20px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color:#eae2b7 ;
+    color: #50534d;
+}
+
+form button:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.title-companies{
+    text-align: center;
+
+    color: #fff;
+    
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+.companies{
+    width: 80%;
+    height: 100px;
+    
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.companies img{
+    width: 200px;
+}
+
+footer{
+    background-color:#0b1419;
+    margin-top: 40px;
+
+    
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-social{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+    padding: 35px;
+}
+
+.info-social h2{
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.footer ul{
+    display: flex;
+    gap: 20px;
+}
+
+.footer a i{
+    text-align: center;
+    font-size: 18px;
+
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+
+.footer-menu a{
+    font-size: 18px;
+    color: #fff;
+    padding: 3px 0px 3px 0px;    
+}
+
+hr{
+    margin-bottom: 15px;
+}
+
+.copy p{
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.copy a{
+    color: #0000ff;
+    font-weight: bold;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site EdTech - Bootcamps</title>
+    <style>
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container-center .item {
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+        .container-order .item:last-child {
+            order: -1;
+        }
+        .container-space {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container-space .item {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            padding: 10px;
+            background-color: #333;
+        }
+        .navbar .nav-item {
+            color: #fff;
+            text-decoration: none;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+        }
+        .card-container .card {
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            flex: 1 1 30%;
+            max-width: 100%;
+            height: auto;
+        }
+        #main-header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        .content-section {
+            margin: 20px 0;
+            padding: 20px;
+        }
+        .nav-item:hover {
+            color: blue;
+        }
+        .card::before {
+            content: "Card: ";
+            font-weight: bold;
+        }
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #005f73;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <h1>Estudos de HTML com Flexbox</h1>
+    </header>
+
+    <nav class="navbar">
+        <a class="nav-item" href="#secao1">Home</a>
+        <a class="nav-item" href="#secao2">Sobre</a>
+        <a class="nav-item" href="#secao3">Cursos</a>
+        <a class="nav-item" href="#secao4">Contato</a>
+    </nav>
+
+    <section id="secao1" class="content-section">
+        <h2>Seção 1: Alinhamento Centralizado</h2>
+        <div class="container-center">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+        </div>
+    </section>
+
+    <section id="secao2" class="content-section">
+        <h2>Seção 2: Alteração da Ordem dos Elementos</h2>
+        <div class="container-order">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+        </div>
+    </section>
+
+    <section id="secao3" class="content-section">
+        <h2>Seção 3: Distribuição Igual de Espaço</h2>
+        <div class="container-space">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <section id="secao4" class="content-section">
+        <h2>Seção 4: Conjunto de Cartões</h2>
+        <div class="card-container">
+            <div class="card">Conteúdo do cartão 1</div>
+            <div class="card">Conteúdo do cartão 2</div>
+            <div class="card">Conteúdo do cartão 3</div>
+        </div>
+    </section>
+
+    <section id="secao5" class="content-section">
+        <h2>Seção 5: Galeria de Imagens</h2>
+        <div class="gallery">
+            <img src="imagens/image1.jpg" alt="Imagem 1">
+            <img src="imagens/image2.jpg" alt="Imagem 2">
+            <img src="imagens/image3.jpg" alt="Imagem 3">
+        </div>
+    </section>
+
+    <footer>
+        <button class="cta-button">Clique Aqui</button>
+        <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Clique aqui para aprender mais sobre HTML</a></p>
+    </footer>
+
+</body>
+</html>
