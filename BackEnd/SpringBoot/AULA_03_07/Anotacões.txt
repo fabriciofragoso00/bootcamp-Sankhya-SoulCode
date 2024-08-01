@@ -1,0 +1,12 @@
+Anotações importante
+
+@Component
+@Service
+@Respository
+@Controller
+@Configuration
+
+ORM(Object Relatonal Mapping)
+    - Hibernate
+    - Eclipse Link
+    - ActiveJPA

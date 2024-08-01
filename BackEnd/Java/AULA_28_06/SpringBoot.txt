@@ -1,0 +1,169 @@
+//pomxml
+// <dependencies>
+//     <!-- Dependência do Spring Boot Starter Data JPA -->
+//     <dependency>
+//         <groupId>org.springframework.boot</groupId>
+//         <artifactId>spring-boot-starter-data-jpa</artifactId>
+//     </dependency>
+    
+//     <!-- Dependência do driver PostgreSQL -->
+//     <dependency>
+//         <groupId>org.postgresql</groupId>
+//         <artifactId>postgresql</artifactId>
+//         <scope>runtime</scope>
+//     </dependency>
+    
+//     <!-- Dependência do Spring Boot Starter Web -->
+//     <dependency>
+//         <groupId>org.springframework.boot</groupId>
+//         <artifactId>spring-boot-starter-web</artifactId>
+//     </dependency>
+// </dependencies>
+
+//applicationproperties
+// spring.datasource.url=jdbc:postgresql://localhost:5432/seu_banco_de_dados
+// spring.datasource.username=seu_usuario
+// spring.datasource.password=sua_senha
+// spring.jpa.hibernate.ddl-auto=update
+// spring.jpa.show-sql=true
+// spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+//entidade
+// import javax.persistence.Entity;
+// import javax.persistence.GeneratedValue;
+// import javax.persistence.GenerationType;
+// import javax.persistence.Id;
+
+// @Entity
+// public class User {
+//     @Id
+//     @GeneratedValue(strategy = GenerationType.IDENTITY)
+//     private Long id;
+//     private String name;
+//     private String email;
+
+//     // Getters e Setters
+//     public Long getId() {
+//         return id;
+//     }
+
+//     public void setId(Long id) {
+//         this.id = id;
+//     }
+
+//     public String getName() {
+//         return name;
+//     }
+
+//     public void setName(String name) {
+//         this.name = name;
+//     }
+
+//     public String getEmail() {
+//         return email;
+//     }
+
+//     public void setEmail(String email) {
+//         this.email = email;
+//     }
+// }
+
+// repositorio
+// import org.springframework.data.jpa.repository.JpaRepository;
+
+// public interface UserRepository extends JpaRepository<User, Long> {
+// }
+
+//service
+// import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.stereotype.Service;
+
+// import java.util.List;
+
+// @Service
+// public class UserService {
+//     @Autowired
+//     private UserRepository userRepository;
+
+//     public List<User> getAllUsers() {
+//         return userRepository.findAll();
+//     }
+
+//     public User getUserById(Long id) {
+//         return userRepository.findById(id).orElse(null);
+//     }
+
+//     public User createUser(User user) {
+//         return userRepository.save(user);
+//     }
+
+//     public User updateUser(Long id, User userDetails) {
+//         User user = userRepository.findById(id).orElse(null);
+//         if (user != null) {
+//             user.setName(userDetails.getName());
+//             user.setEmail(userDetails.getEmail());
+//             return userRepository.save(user);
+//         }
+//         return null;
+//     }
+
+//     public void deleteUser(Long id) {
+//         userRepository.deleteById(id);
+//     }
+// }
+
+//Controlador
+// import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.web.bind.annotation.*;
+
+// import java.util.List;
+
+// @RestController
+// @RequestMapping("/api/users")
+// public class UserController {
+//     @Autowired
+//     private UserService userService;
+
+//     @GetMapping
+//     public List<User> getAllUsers() {
+//         return userService.getAllUsers();
+//     }
+
+//     @GetMapping("/{id}")
+//     public User getUserById(@PathVariable Long id) {
+//         return userService.getUserById(id);
+//     }
+
+//     @PostMapping
+//     public User createUser(@RequestBody User user) {
+//         return userService.createUser(user);
+//     }
+
+//     @PutMapping("/{id}")
+//     public User updateUser(@PathVariable Long id, @RequestBody User userDetails) {
+//         return userService.updateUser(id, userDetails);
+//     }
+
+//     @DeleteMapping("/{id}")
+//     public void deleteUser(@PathVariable Long id) {
+//         userService.deleteUser(id);
+//     }
+// }
+
+// mvn spring-boot:run
+
+Adriano Gomes
+14:12
+https://dontpad.com/pomxml_java
+Adriano Gomes
+14:14
+https://dontpad.com/applicationproperties_java
+https://dontpad.com/entidadeuser_java
+Adriano Gomes
+14:16
+https://dontpad.com/repositoriouser_java
+https://dontpad.com/service_java
+Adriano Gomes
+14:17
+https://dontpad.com/controlador_java
+mvn spring-boot:run

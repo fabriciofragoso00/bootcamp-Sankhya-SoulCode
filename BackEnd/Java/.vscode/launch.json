@@ -1,0 +1,371 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AULA_02_07.EXERCICIO_5_POO.DESAFIO_5.Main",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AULA_02_07.EXERCICIO_5_POO.DESAFIO_4.Main",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AULA_02_07.EXERCICIO_5_POO.DESAFIO_3.Main",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AULA_02_07.EXERCICIO_5_POO.DESAFIO_2.Main",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AULA_02_07.EXERCICIO_5_POO.DESAFIO_1.Main",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AULA_02_07.ABSTRATA.Main",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AULA_02_07.RPG.Main",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AULA_02_07.EXEMPLO.Main",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AULA_02_07.Main",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_05",
+            "request": "launch",
+            "mainClass": "AULA_28_06.EXERCICIO_4_EXCECOES.atv_05",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_04",
+            "request": "launch",
+            "mainClass": "AULA_28_06.EXERCICIO_4_EXCECOES.atv_04",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_03",
+            "request": "launch",
+            "mainClass": "AULA_28_06.EXERCICIO_4_EXCECOES.atv_03",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_02",
+            "request": "launch",
+            "mainClass": "AULA_28_06.EXERCICIO_4_EXCECOES.atv_02",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_01",
+            "request": "launch",
+            "mainClass": "AULA_28_06.EXERCICIO_4_EXCECOES.atv_01",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AULA_01_07.Main",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Excecoes",
+            "request": "launch",
+            "mainClass": "AULA_28_06.Excecoes",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_03",
+            "request": "launch",
+            "mainClass": "AULA_27_06.EXERCICIO_3_LISTA.atv_03",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_02",
+            "request": "launch",
+            "mainClass": "AULA_27_06.EXERCICIO_3_LISTA.atv_02",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_05",
+            "request": "launch",
+            "mainClass": "AULA_27_06.EXERCICIO_3_LISTA.atv_05",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_04",
+            "request": "launch",
+            "mainClass": "AULA_27_06.EXERCICIO_3_LISTA.atv_04",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_01",
+            "request": "launch",
+            "mainClass": "AULA_27_06.EXERCICIO_3_LISTA.atv_01",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_07",
+            "request": "launch",
+            "mainClass": "AULA_26_06.EXERCICIO_2_ARRAYS.atv_07",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_09",
+            "request": "launch",
+            "mainClass": "AULA_26_06.EXERCICIO_2_ARRAYS.atv_09",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Listas02",
+            "request": "launch",
+            "mainClass": "AULA_27_06.Listas02",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Listas",
+            "request": "launch",
+            "mainClass": "AULA_27_06.Listas",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AULA_27_06.Main",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_08",
+            "request": "launch",
+            "mainClass": "AULA_26_06.EXERCICIO_2_ARRAYS.atv_08",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_06",
+            "request": "launch",
+            "mainClass": "AULA_26_06.EXERCICIO_2_ARRAYS.atv_06",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_06$Main",
+            "request": "launch",
+            "mainClass": "AULA_26_06.EXERCICIO_2_ARRAYS.atv_06$Main",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_05",
+            "request": "launch",
+            "mainClass": "AULA_26_06.EXERCICIO_2_ARRAYS.atv_05",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_04",
+            "request": "launch",
+            "mainClass": "AULA_26_06.EXERCICIO_2_ARRAYS.atv_04",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_10",
+            "request": "launch",
+            "mainClass": "AULA_26_06.EXERCICIO_2_ARRAYS.atv_10",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_03",
+            "request": "launch",
+            "mainClass": "AULA_26_06.EXERCICIO_2_ARRAYS.atv_03",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_02",
+            "request": "launch",
+            "mainClass": "AULA_26_06.EXERCICIO_2_ARRAYS.atv_02",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_01",
+            "request": "launch",
+            "mainClass": "AULA_26_06.EXERCICIO_2_ARRAYS.atv_01",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AULA_26_06.Main",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Arrays",
+            "request": "launch",
+            "mainClass": "AULA_26_06.Arrays",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_10",
+            "request": "launch",
+            "mainClass": "AULA_25_06.EXERCICIO_01.atv_10",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_09",
+            "request": "launch",
+            "mainClass": "AULA_25_06.EXERCICIO_01.atv_09",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_08",
+            "request": "launch",
+            "mainClass": "AULA_25_06.EXERCICIO_01.atv_08",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_07",
+            "request": "launch",
+            "mainClass": "AULA_25_06.EXERCICIO_01.atv_07",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_06",
+            "request": "launch",
+            "mainClass": "AULA_25_06.EXERCICIO_01.atv_06",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_05",
+            "request": "launch",
+            "mainClass": "AULA_25_06.EXERCICIO_01.atv_05",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_04",
+            "request": "launch",
+            "mainClass": "AULA_25_06.EXERCICIO_01.atv_04",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_03",
+            "request": "launch",
+            "mainClass": "AULA_25_06.EXERCICIO_01.atv_03",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_02",
+            "request": "launch",
+            "mainClass": "AULA_25_06.EXERCICIO_01.atv_02",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "atv_01",
+            "request": "launch",
+            "mainClass": "AULA_25_06.EXERCICIO_01.atv_01",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AULA_25_06.Main",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "exemplo",
+            "request": "launch",
+            "mainClass": "AULA_24_06.exemplo",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "ifelse",
+            "request": "launch",
+            "mainClass": "AULA_24_06.ifelse",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AULA_24_06.Main",
+            "projectName": "Java_ef593c5d"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
