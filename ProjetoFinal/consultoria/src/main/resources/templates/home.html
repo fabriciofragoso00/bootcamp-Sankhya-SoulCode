@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Douglas Coelho, Fabricio Fragoso, Luciana Poppi, Matheus André, Washiner">
+    <meta name="description" content="TechConsult - Consultoria especializada em TI. Oferecemos soluções inovadoras para transformar sua empresa com tecnologia de ponta.">
+    <title>TechConsult - Consultoria especializada em TI.</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" th:href="@{/home}">
+            <img src="/images/Logo.png" width="30" height="30" alt="Logo">
+            <span>TechConsult</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/clientes}">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/consultores}">Consultores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/consultas}">Consultas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+                <li class="nav-item" >
+                    <span class="nav-link">Bem-Vindo(a), <span th:text="${usuarioLogado.usuario}"></span>!</span>
+                </li>
+                <li class="nav-item">
+                    <a class=" text-white btn btn-custom ml-5" th:href="@{/logout}">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header mb-5">
+        <p> <img src="/images/header.png" alt="imagem da header" class="imagem-header"></p>
+    </header>
+
+
+    <!-- Carrosel -->
+    <div id="carouselExampleIndicators" class="carousel slide mx-5" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="/images/areasConsultorias/seguranca_informacao.png" class="d-block w-100"
+                             alt="First slide">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/images/areasConsultorias/infraestrutura_ti.png" class="d-block w-100"
+                             alt="Second slide">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/images/areasConsultorias/computacao_nuvem.png" class="d-block w-100"
+                             alt="Third slide">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="/images/areasConsultorias/bigData_analiseDados.png" class="d-block w-100"
+                             alt="Fourth slide">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/images/areasConsultorias/IA_machineLearning.png" class="d-block w-100"
+                             alt="Fifth slide">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/images/areasConsultorias/consultoria_ERP.png" class="d-block w-100"
+                             alt="Sixth slide">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="/images/areasConsultorias/desenvolvimento_software.png" class="d-block w-100"
+                             alt="Seventh slide">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/images/areasConsultorias/gerenciamento_projetosTI.png" class="d-block w-100"
+                             alt="Eighth slide">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/images/areasConsultorias/devops_automacao.png" class="d-block w-100"
+                             alt="Ninth slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <section class="container mt-5 mb-5">
+        <div class="card">
+            <div class="card-header text-white">
+                <h4 class="card-title m-0">TechConsult</h4>
+            </div>
+            <div class="card-body bg-light">
+                <p class="card-text">
+                    É uma empresa de consultoria em TI que se destaca pela excelência e inovação na transformação e
+                    otimização tecnológica das empresas. Nossa equipe é composta por profissionais altamente qualificados,
+                    comprometidos em oferecer soluções que não apenas atendem, mas superam as necessidades específicas de nossos
+                    clientes.
+                </p>
+
+                <p class="card-text">
+                    Com um portfólio abrangente de serviços, abrangemos desde a segurança da informação e infraestrutura de TI
+                    até a computação em nuvem e análise de big data. Cada projeto é tratado de forma única, garantindo uma
+                    abordagem personalizada e estratégica que resulta em maior eficiência, inovação e crescimento para as
+                    empresas.
+                </p>
+
+                <p class="card-text">
+                    Na TechConsult, acreditamos que a tecnologia é um catalisador essencial para o sucesso empresarial. Por
+                    isso, estamos sempre à frente das tendências, incorporando as melhores práticas e ferramentas mais avançadas
+                    do mercado para entregar resultados tangíveis e de alto impacto.
+                </p>
+            </div>                                   
+        </div>
+
+        <div class="d-flex mt-5 ">
+            <div class="card">
+                <div class="card-header text-white">
+                    <h4 class="card-title m-0">Nossa Missão</h4>
+                </div>
+                <div class="card-body bg-light">
+                    <p class="card-text">
+                        Nossa missão é ajudar empresas a alcançar o sucesso por meio da tecnologia, oferecendo serviços personalizados e de alta qualidade que promovem eficiência, inovação e crescimento. Nos dedicamos a entender as necessidades de cada cliente, garantindo que nossas soluções sejam eficazes e alinhadas aos objetivos de cada empresa.
+                    </p>
+                </div>  
+            </div>
+            <div class="card ml-5">
+                <div class="card-header text-white">
+                    <h4 class="card-title m-0">Nossa Visão</h4>
+                </div>
+                <div class="card-body bg-light">
+                    <p class="card-text">
+                        A nossa visão é o compromisso com a qualidade em tudo o que fazemos, a busca constante por soluções criativas e eficazes, transparência e ética em todas as nossas interações e a colaboração do trabalho em equipe para alcançar os melhores resultados.
+                    </p>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center section-title">
+        <h2 class="mb-4">Nossa Equipe Especializada:</h2>
+    </section>
+    <div class="grid-container mx-5">
+        <div class="consultor">
+            <img src="/images/consultores/joaovictor.jpg" alt="Foto do Consultor">
+            <div class="info">
+                <h3>João Victor</h3>
+                <p class="mb-2">Segurança da Informação</p>
+                <a th:href="@{consultas/nova}" class="btn btn-custom text-white">Agende uma consulta</a>
+            </div>
+        </div>
+    
+        <div class="consultor">
+            <img src="/images/consultores/robertacristina.jpg" alt="Foto do Consultor">
+            <div class="info">
+                <h3>Roberta Cristina</h3>
+                <p class="mb-2">Infraestrutura de TI</p>
+                <a th:href="@{/consultas/nova}" class="btn btn-custom text-white">Agende uma consulta</a>
+            </div>
+        </div>
+
+        <div class="consultor">
+            <img src="/images/consultores/jhonatanbarros.jpg" alt="Foto do Consultor">
+            <div class="info">
+                <h3>Jhonatan Barros</h3>
+                <p class="mb-2">Computação em Nuvem</p>
+                <a th:href="@{consultas/nova}" class="btn btn-custom text-white">Agende uma consulta</a>
+            </div>
+        </div>
+
+        <div class="consultor">
+            <img src="/images/consultores/rafaelsantos.jpg" alt="Foto do Consultor">
+            <div class="info">
+                <h3>Rafael Santos</h3>
+                <p class="mb-2">Big Data e Análise de Dados</p>
+                <a th:href="@{/consultas/nova}" class="btn btn-custom text-white">Agende uma consulta</a>
+            </div>
+        </div>
+
+        <div class="consultor">
+            <img src="/images/consultores/jessicabatista.jpg" alt="Foto do Consultor">
+            <div class="info">
+                <h3>Jéssica Batista</h3>
+                <p class="mb-2">Engenharia IA</p>
+                <a th:href="@{consultas/nova}" class="btn btn-custom text-white">Agende uma consulta</a>
+            </div>
+        </div>
+
+        <div class="consultor">
+            <img src="/images/consultores/vanessadelgado.jpg" alt="Foto do Consultor">
+            <div class="info">
+                <h3>Vanessa Delgado</h3>
+                <p class="mb-2">Consultoria em ERP</p>
+                <a th:href="@{/consultas/nova}" class="btn btn-custom text-white">Agende uma consulta</a>
+            </div>
+        </div>
+
+        <div class="consultor">
+            <img src="/images/consultores/fernandolima.jpg" alt="Foto do Consultor">
+            <div class="info">
+                <h3>Fernando Lima</h3>
+                <p class="mb-2">Desenvolvimento de Software</p>
+                <a th:href="@{/consultas/nova}" class="btn btn-custom text-white">Agende uma consulta</a>
+            </div>
+        </div>
+
+        <div class="consultor">
+            <img src="/images/consultores/lazarodesouza.jpg" alt="Foto do Consultor">
+            <div class="info">
+                <h3>Lázaro de Souza</h3>
+                <p class="mb-2">Gerenciamento de Projetos em TI</p>
+                <a th:href="@{/consultas/nova}" class="btn btn-custom text-white">Agende uma consulta</a>
+            </div>
+        </div>
+
+        <div class="consultor">
+            <img src="/images/consultores/daianeamaral.jpg" alt="Foto do Consultor">
+            <div class="info">
+                <h3>Daiane Amaral</h3>
+                <p class="mb-2">DevOps e Automação</p>
+                <a th:href="@{/consultas/nova}" class="btn btn-custom text-white">Agende uma consulta</a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">FeedBack dos Clientes</h2>
+            <div class="row">
+                <div class="col-md-4" th:each="feedback : ${feedbacks}">
+                    <div class="card mb-3">
+                        <div class="card-header d-flex justify-content-between text-white">
+                            <h5 class="card-title m-0" th:text="${feedback.IdCliente.nomeEmpresa}"></h5>
+                            <h6 class="card-subtitle m-0 " th:text="${#dates.format(feedback.dataFeedback, 'dd/MM/yyyy')}"></h6>
+                        </div>
+                        <div class="card-body bg-light">
+                            <p class="card-text" th:text="${feedback.feedback}"></p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a th:href="@{/feedbacks/deletar/{idFeedback}(idFeedback=${feedback.idFeedback})}" class="btn btn-danger btn-sm">Deletar</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>    
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+            <a th:href="@{feedbacks/novo}" class="btn btn-custom text-white">Sua opnião é importante para nós Deixe o seu Feedback</a>
+        </div>
+        
+    </div>
+
+     <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class=" container d-flex justify-content-around">
+            <div>
+                <h5>Contato</h5>
+                <ul class="list-unstyled">
+                    <li>Email: techconsult@tc.com</li>
+                    <li>Telefone: +55 11 1234-5678</li>
+                    <li>Endereço: Rua da Computação, nº 53. Bairro Internet</li>
+                </ul>
+            </div>
+            <div class="d-flex flex-column align-self-center">
+                <h5>Redes Sociais</h5>
+                <ul class="list-unstyled d-flex justify-content-between">
+                    <li><a href="https://pt-br.facebook.com/login/device-based/regular/login/" target="_blank"><img src="/images/redeSocial/facebook.png" width="20" alt="Facebook"></a></li>
+                    <li><a href="https://x.com/" target="_blank"><img src="/images/redeSocial/x.png" width="20" alt="X"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="/images/redeSocial/instagram.png" width="20" alt="Instagram"></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><img src="/images/redeSocial/linkedin.png" width="20" alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+        </div>
+    <hr>
+    <p class="text-center">Copyright &copy 2024 Squad 4, Alguns direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
